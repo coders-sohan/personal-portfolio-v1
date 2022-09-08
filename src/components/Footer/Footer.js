@@ -21,13 +21,31 @@ const Footer = () => {
 						</div>
 						<div className="flex items-center gap-x-8 mt-6">
 							<div className="cursor-pointer">
-								<p className="font-light">facebook</p>
+								<a
+									href="https://fb.com/mi.sohan.09"
+									target={`_blank`}
+									className="font-light"
+								>
+									facebook
+								</a>
 							</div>
 							<div className="cursor-pointer">
-								<p className="font-light">youtube</p>
+								<a
+									href="https://www.youtube.com/channel/UCInA-8J34srdwZHgn6zOb-w"
+									target={`_blank`}
+									className="font-light"
+								>
+									youtube
+								</a>
 							</div>
 							<div className="cursor-pointer">
-								<p className="font-light">linkedin</p>
+								<a
+									href="https://www.linkedin.com/in/mofizulislam"
+									target={`_blank`}
+									className="font-light"
+								>
+									linkedin
+								</a>
 							</div>
 						</div>
 					</div>
