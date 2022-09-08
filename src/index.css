@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+	@apply w-2 rounded-lg;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	@apply bg-gray-200;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	@apply bg-gradient-to-b from-purple-400 to-orange-400 rounded-lg;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-gradient-to-b from-purple-600 to-orange-600 rounded-lg;
+}
+
+[role="button"] {
+	cursor: default;
+}
+
+@layer components {
+	.btn {
+		@apply px-4 py-2 transition ease-in duration-300 border rounded-lg mt-3;
+	}
+
+	.btn-primary {
+		@apply bg-purple-600 hover:bg-orange-500 border-purple-600 hover:border-orange-500 text-white;
+	}
+
+	.btn-secondary {
+		@apply bg-orange-600 hover:bg-purple-500 border-orange-600 hover:border-purple-500 text-white;
+	}
+
+	.image-card {
+		@apply p-5 border border-gray-100 rounded-md hover:shadow-xl transition duration-300 ease-linear hover:-translate-y-1;
+	}
+}
